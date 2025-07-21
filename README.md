@@ -32,31 +32,37 @@ This Python bot automatically fetches posts from a list of subreddits and sends 
    cd reddit-telegram-bot
 
 2. **Install The Requirements:**
-    pip install -r requirements.txt
+    -   pip install -r requirements.txt
 
 3. **Add your credentials:**
     Open the script and replace the placeholders:
-        client_id="YOUR_REDDIT_CLIENT_ID"
-        client_secret="YOUR_REDDIT_SECRET"
-        username="YOUR_REDDIT_USERNAME"
-        password="YOUR_REDDIT_PASSWORD"
-        TELEGRAM_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
-        CHAT_ID = YOUR_CHANNEL_OR_GROUP_ID
+    -   client_id="YOUR_REDDIT_CLIENT_ID"
+    -   client_secret="YOUR_REDDIT_SECRET"
+    -   username="YOUR_REDDIT_USERNAME"
+    -   password="YOUR_REDDIT_PASSWORD"
+    -   TELEGRAM_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+    -   CHAT_ID = YOUR_CHANNEL_OR_GROUP_ID
 
 4. **Add your SubReddits:**
-    Create a file named subreddits.txt in the root of the project. Add one subreddit name per line:
-        memes
-        cosplay
-        etc...
+    - Create a file named subreddits.txt in the root of the project. Add one subreddit name per line:
+    - memes
+    - cosplay
+    -   etc...
 
 5. **Configuration:**
-    Edit these variables in the script:
-        INTERVAL_BETWEEN_POSTS = 0.5  # Minutes between posts
-        INTERVAL_BETWEEN_SUBREDDITS = 20  # Minutes between switching subreddits
-        POST_LIMIT = 1000  # How many posts to check from subreddit
-        MIN_UPVOTES = 20  # Minimum upvotes required
+    - Edit these variables in the script:
+    - INTERVAL_BETWEEN_POSTS = 0.5  # Minutes between posts
+    - INTERVAL_BETWEEN_SUBREDDITS = 20  # Minutes between switching subreddits
+    - POST_LIMIT = 1000  # How many posts to check from subreddit
+    - MIN_UPVOTES = 20  # Minimum upvotes required
 
 
 6. **Run:**
-    Run the bot with:
-        python Telegram_Bot.py
+    - Run the bot with:
+    - python Telegram_Bot.py
+
+---
+
+## 🛡️ Security Note
+
+- Do not commit your credentials to GitHub! Use environment variables or a separate config file (not included in this repo) if you plan to share or deploy this bot publicly.
